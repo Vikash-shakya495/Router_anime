@@ -15,3 +15,10 @@ outDir: "dist", // or your preferred output directory
 publicDir: "public", // Ensure public directory is set if not default
 
 });
+
+
+
+
+
+
+

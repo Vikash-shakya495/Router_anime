@@ -13,11 +13,10 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 const router  = createBrowserRouter(
   createRoutesFromElements(
   <Route path="/" element={<Layout />}>
-    <Route path='/' element={<Dashboard/>}/>
-    <Route path='/dashboard' element={<Dashboard/>}/>
-    <Route path='/home' element={<Home />}/>
-    <Route path='/login' element={<Login />} />
-    <Route path='/signup' element={<SignUp />} />
+    <Route index element={<Dashboard/>}/>
+    <Route path='home' element={<Home />}/>
+    <Route path='login' element={<Login />} />
+    <Route path='signup' element={<SignUp />} />
   </Route>
   )
 )
