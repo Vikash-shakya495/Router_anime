@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 import './index.css'
 import Layout from './Layout.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
@@ -13,6 +13,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 const router  = createBrowserRouter(
   createRoutesFromElements(
   <Route path="/" element={<Layout />}>
+    <Route path='/' element={<Dashboard/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>
     <Route path='/home' element={<Home />}/>
     <Route path='/login' element={<Login />} />
